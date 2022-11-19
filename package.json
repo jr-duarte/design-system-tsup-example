@@ -1,5 +1,5 @@
 {
-  "name": "design-system-tsup-example",
+  "name": "design-system-tsup-example-1",
   "version": "1.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
