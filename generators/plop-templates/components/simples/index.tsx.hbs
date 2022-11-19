@@ -1,0 +1,17 @@
+import React from 'react';
+import type * as Stitches from '@stitches/react';
+
+import * as S from './styles';
+
+type {{pascalCase name}}ComponentProps = {
+css?: Stitches.CSS;
+children: React.ReactNode;
+};
+
+export default function {{pascalCase name}}({ css,children, ...props }: {{pascalCase name}}ComponentProps) {
+return (
+    <S.Wrapper css={css} {...props}>
+      {children}
+    </S.Wrapper>
+    );
+}
