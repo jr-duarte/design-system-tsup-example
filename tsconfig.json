@@ -13,10 +13,12 @@
     "preserveWatchOutput": true,
     "skipLibCheck": true,
     "strict": true,
+
     "jsx": "react-jsx",
     "lib": ["dom", "ES2015"],
     "module": "ESNext",
     "target": "es6"
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "include": ["src"]
 }
