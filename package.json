@@ -1,6 +1,6 @@
 {
   "name": "design-system-tsup-example-1",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -18,7 +18,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
-    "postinstall": "husky install",
+    "prepare": "husky install",
     "lint": "eslint ./",
     "lintFix": "eslint ./ --fix"
   },
