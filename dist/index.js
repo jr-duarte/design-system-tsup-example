@@ -1,10 +1,12 @@
 "use strict";
+var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __defProps = Object.defineProperties;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __propIsEnum = Object.prototype.propertyIsEnumerable;
 var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
@@ -44,6 +46,10 @@ var __copyProps = (to, from, except, desc) => {
   }
   return to;
 };
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // src/index.tsx
@@ -513,11 +519,11 @@ function Button(_a) {
 }
 
 // src/components/Button/ButtonTeste/index.tsx
-var import_react2 = require("react");
+var import_react2 = __toESM(require("react"));
 var import_jsx_runtime2 = require("react/jsx-runtime");
 function ButtonTeste({ children }) {
-  const [count, setCount] = (0, import_react2.useState)(0);
-  (0, import_react2.useEffect)(() => {
+  const [count, setCount] = import_react2.default.useState(0);
+  import_react2.default.useEffect(() => {
     console.log(count);
   }, [count]);
   return /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)("button", {

@@ -472,11 +472,11 @@ function Button(_a) {
 }
 
 // src/components/Button/ButtonTeste/index.tsx
-import { useEffect, useState } from "react";
+import React from "react";
 import { jsxs } from "react/jsx-runtime";
 function ButtonTeste({ children }) {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
+  const [count, setCount] = React.useState(0);
+  React.useEffect(() => {
     console.log(count);
   }, [count]);
   return /* @__PURE__ */ jsxs("button", {
