@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 type ButtonComponentProps = {
   children: string;
 };
 
 export default function ButtonTeste({ children }: ButtonComponentProps) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = React.useState(0);
 
-  useEffect(() => {
+  React.useEffect(() => {
     console.log(count);
   }, [count]);
 
